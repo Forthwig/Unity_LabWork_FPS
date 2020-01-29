@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 226619116405202655}
   - component: {fileID: 1375220411257870888}
   - component: {fileID: 3426540416722941074}
-  - component: {fileID: -7966860383364858456}
+  - component: {fileID: 7008925191464486846}
   m_Layer: 0
   m_Name: Pioupiouu
   m_TagString: Untagged
@@ -93,7 +93,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &-7966860383364858456
+--- !u!54 &7008925191464486846
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

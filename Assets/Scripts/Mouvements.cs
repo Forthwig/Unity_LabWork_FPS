@@ -13,14 +13,14 @@ public class Mouvements : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    	float x = Input.GetAxis("Horizontal");
+    	float x = Input.GetAxis("Horizontal"); //On récup les x:z 
         float z = Input.GetAxis("Vertical");
 
-        Vector3 move = transform.right * x + transform.forward * z;
+        Vector3 move = transform.right * x + transform.forward * z; 
 
-        controller.Move(move * speed * Time.deltaTime);
+        controller.Move(move * speed * Time.deltaTime); // L'emplois du Time.deltaTime permet de ne plus être dépendant des frames 
 
-        if(Input.GetButtonDown("Fire1")) shot.SpawnBall();
+        if(Input.GetButtonDown("Fire1")) shot.SpawnBall(); // On regarde si on "Pioupioupiouuu"
     
     }
 }

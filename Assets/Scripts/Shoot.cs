@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
-	[SerializeField] private GameObject prefab = default; // = default est pour éviter les warning
+	[SerializeField] private GameObject prefab = default; // = default est pour éviter les warnings
 	[SerializeField] private Transform ballsParentTransdform = default;
 	[SerializeField] private float spwaningSpeed = 1f; 
 	[SerializeField] private float spawningForce = 500f; 
