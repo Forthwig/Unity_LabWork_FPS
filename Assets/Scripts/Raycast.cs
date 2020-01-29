@@ -1,25 +1,34 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
 public class Raycast : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	public float damage = 100f; //Dans l'optique de faire des dégats
+	public	float range = 100f;
+	public Camera fpsCam;
+
+
 
     // Update is called once per frame
     void Update()
     {
-       RaycastHit hit; 
+    	if(Input.GetButtonDown("Fire1"))
+    	 {
+    	 	Shoot();
 
-       Debug.DrawRay(transform.position, transform.up*10,Color.red);
+    	 }
 
-       if (Physics.Raycast(transform.position, transform.up,out hit, 10))
-       {
-       	Debug.Log("Ca touchheeeeuuuh!");
-       }
     }
+
+    void Shoot()
+    {
+    	RaycastHit hit; 
+
+    	if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+    	{
+    	Debug.Log(hit.transform);
+   		 }
+    	//Range ici permet de prendre en comte la distance et donc de ne pas toucher des objetc trop loins
+    }
+
 }
