@@ -13,6 +13,7 @@ public class Shoot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Destroy(prefab,2); //Détruit la balle au bout de 2sec une fois tirer
 
     }
 
